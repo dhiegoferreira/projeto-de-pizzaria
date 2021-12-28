@@ -6,5 +6,18 @@ namespace projetodepizzaria
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Conn.Conectar())
+            {
+                MessageBox.Show("Conectado com sucesso!");
+
+            } else
+            {
+                MessageBox.Show("Não conseguimos conectar!");
+            }
+        
+        }
     }
 }

@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projetodepizzaria", "projetodepizzaria\projetodepizzaria.csproj", "{A74B470B-C6A7-4889-8112-BD477051418D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "projetodepizzaria", "projetodepizzaria\projetodepizzaria.csproj", "{A74B470B-C6A7-4889-8112-BD477051418D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Image", "Image", "{B44B17C6-CC0B-4BB3-B537-3795AED53F51}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Documents\NetBeansProjects\sistemapizzaria\src\Image\icone-BDAtivo.png = ..\..\..\Documents\NetBeansProjects\sistemapizzaria\src\Image\icone-BDAtivo.png
+		..\..\..\Documents\NetBeansProjects\sistemapizzaria\src\Image\icone-BDInativo.png = ..\..\..\Documents\NetBeansProjects\sistemapizzaria\src\Image\icone-BDInativo.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
