@@ -12,6 +12,15 @@ namespace projetodepizzaria
 
             Image bdInativo = Image.FromFile("C:\\Users\\TESTE\\source\\repos\\projetodepizzaria\\projetodepizzaria\\Image\\icone-BDInativo.png");
 
+
+            Image logo = Image.FromFile("C:\\Users\\TESTE\\source\\repos\\projetodepizzaria\\projetodepizzaria\\Image\\icone-logo.png");
+
+
+            txtIconeLogo.Size = new Size(logo.Width, logo.Height);
+            txtIconeLogo.Image = logo;
+
+
+
             if (Conn.Conectar()) {
                 //A linha abaixo define o tamanho da labek de acordo com o tamannho da imagem.
                 txtBancoStatus.Size = new Size(bdAtivo.Width, bdAtivo.Height);
@@ -24,7 +33,23 @@ namespace projetodepizzaria
                 txtBancoStatus.Image = bdInativo;
 
             }
+
+
+
         }
+
+
+
+        //Método para autenticação
+        public void autenticacao()
+        {
+            
+
+
+        }
+
+
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -39,6 +64,14 @@ namespace projetodepizzaria
         
         }
 
-       
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+
+
+
+
+
+        }
     }
 }
