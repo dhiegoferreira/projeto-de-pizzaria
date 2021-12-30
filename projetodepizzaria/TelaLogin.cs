@@ -37,17 +37,25 @@ namespace projetodepizzaria
         {
             //Chamar o método autenticação
             autenticacao();
+            //Abrir tela Principal;
+            TelaCadastroCliente telacad = new TelaCadastroCliente();
+            telacad.Show();
+
+
+
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
-
+        //Método de máscara para a senha
         private void txtSenha_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
+        }
+
+        //Ação do botão Sair
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Dispose();
         }
     }
 }

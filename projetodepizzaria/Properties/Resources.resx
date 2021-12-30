@@ -124,4 +124,13 @@
   <data name="icone-sair32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\icone-sair32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icone-atualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-atualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-criar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-criar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-deletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-deletar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

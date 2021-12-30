@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtSenha = new System.Windows.Forms.MaskedTextBox();
             this.txtIconeLogo = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtSenha = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,13 +49,23 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnEntrar);
+            this.panel1.Controls.Add(this.btnSair);
             this.panel1.Controls.Add(this.txtUsuario);
             this.panel1.Location = new System.Drawing.Point(-2, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(754, 395);
             this.panel1.TabIndex = 2;
+            // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(262, 288);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.Size = new System.Drawing.Size(236, 23);
+            this.txtSenha.TabIndex = 10;
+            this.txtSenha.UseSystemPasswordChar = true;
+            this.txtSenha.ValidatingType = typeof(int);
+            this.txtSenha.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtSenha_MaskInputRejected);
             // 
             // txtIconeLogo
             // 
@@ -96,31 +106,31 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Usuário:";
             // 
-            // button3
+            // btnEntrar
             // 
-            this.button3.Image = global::projetodepizzaria.Properties.Resources.icone_entrar32px;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(407, 335);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 36);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Entrar";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnEntrar.Image = global::projetodepizzaria.Properties.Resources.icone_entrar32px;
+            this.btnEntrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEntrar.Location = new System.Drawing.Point(407, 335);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(91, 36);
+            this.btnEntrar.TabIndex = 5;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.btnEntrar.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button2
+            // btnSair
             // 
-            this.button2.Image = global::projetodepizzaria.Properties.Resources.icone_sair32px;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(262, 335);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 36);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Sair";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnSair.Image = global::projetodepizzaria.Properties.Resources.icone_sair32px;
+            this.btnSair.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSair.Location = new System.Drawing.Point(262, 335);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(80, 36);
+            this.btnSair.TabIndex = 4;
+            this.btnSair.Text = "Sair";
+            this.btnSair.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // txtUsuario
             // 
@@ -128,16 +138,6 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(236, 23);
             this.txtUsuario.TabIndex = 2;
-            // 
-            // txtSenha
-            // 
-            this.txtSenha.Location = new System.Drawing.Point(262, 288);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(236, 23);
-            this.txtSenha.TabIndex = 10;
-            this.txtSenha.UseSystemPasswordChar = true;
-            this.txtSenha.ValidatingType = typeof(int);
-            this.txtSenha.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtSenha_MaskInputRejected);
             // 
             // TelaLogin
             // 
@@ -158,8 +158,8 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private Button button3;
-        private Button button2;
+        private Button btnEntrar;
+        private Button btnSair;
         private TextBox txtUsuario;
         private Label txtIconeLogo;
         private MaskedTextBox txtSenha;
