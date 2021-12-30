@@ -44,5 +44,10 @@ namespace projetodepizzaria
         {
             this.Dispose();
         }
+
+        private void txtSenha_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

@@ -51,18 +51,22 @@ namespace projetodepizzaria
                 {
                     MessageBox.Show("Usuário ou senha inválidos.");
                 }
-                rdr.Close();
+                rdr.Close(); //Encerra a leitura
 
                 
             } catch (MySql.Data.MySqlClient.MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
 
+            } finally
+            {
+                //Finalizar a conexão
+                conn.Close();
+                Console.WriteLine("Conexão finalizada");
+
             }
 
-            //Finalizar a conexão
-            conn.Close();
-            Console.WriteLine("Conexão finalizada");
+            
 
         }
 
