@@ -42,11 +42,16 @@ namespace projetodepizzaria
 
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
+                //Se rdr.Read() retornar true = encontrar usuário e senha correspondentes, então...
+
                 if (rdr.Read())
                 {
                     MessageBox.Show("Usuário encontrado com sucesso!");
-                    
-                    
+                    //Abrir tela Principal;
+                    TelaCadastroCliente telacad = new TelaCadastroCliente();
+                    telacad.Show();
+
+
                 } else
                 {
                     MessageBox.Show("Usuário ou senha inválidos.");

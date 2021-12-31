@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace projetodepizzaria
 {
     public partial class TelaLogin : Form
@@ -7,7 +9,7 @@ namespace projetodepizzaria
         public TelaLogin()
         {
             InitializeComponent();
-            CenterToScreen(); //Não faz sentido TelaLogin.CenterToScreen pois já está sendo construido
+            CenterToScreen(); // TelaLogin.CenterToScreen Não faz sentido pois já está sendo construido
 
 
         }
@@ -18,15 +20,19 @@ namespace projetodepizzaria
 
             if (txtUsuario.Text == "" || txtSenha.Text == "")
             {
-                MessageBox.Show("Prenncha os campos corretamente.");
-                Console.WriteLine("Preencha os campos corretamente.");
-                 
-            } else
+
+                //Trace.WriteLine ou Debug.WriteLine
+                MessageBox.Show("Preencha os campos corretamente.");
+                
+
+            }
+            else
             {
                 //Aqui nós iremos passar os textos inseridos pelo usuário como parâmetros
                 Console.WriteLine(txtUsuario);
                 Console.WriteLine(txtSenha);
                 DAOLogin.autenticarFuncionario(txtUsuario.Text, txtSenha.Text);
+                
 
             }
 
@@ -35,14 +41,9 @@ namespace projetodepizzaria
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("Olá, mundo!");
             //Chamar o método autenticação
             autenticacao();
-            //Abrir tela Principal;
-            TelaCadastroCliente telacad = new TelaCadastroCliente();
-            telacad.Show();
-
-
-
 
         }
 

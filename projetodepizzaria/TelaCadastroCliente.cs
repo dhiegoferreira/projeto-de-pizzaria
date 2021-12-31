@@ -15,17 +15,15 @@ namespace projetodepizzaria
         public TelaCadastroCliente()
         {
             InitializeComponent();
+            CenterToScreen();
         }
-
-
-        
 
         //Quando o componente for carregado
         private void CadastroCliente_Load(object sender, EventArgs e)
         {
             //Passar a string sql como parÂmetro
             // DAOCadastroCliente.ObterDados
-            DAOCadastroCliente.ObterDados("SELECT c.cli_cod AS Código, c.cli_nome AS Nome, e.end_bairro AS Bairro, e.end_rua AS Rua, e.end_numero AS Numero, c.cli_telefone AS Telefone, c.cli_sexo AS Sexo FROM clientes AS c JOIN endereco AS e ON c.cli_end_fk = e.end_cod", dataGrid_Clientes);
+            DAOCadastroCliente.ObterDados(dataGrid_Clientes);
 
         }
 
@@ -36,7 +34,18 @@ namespace projetodepizzaria
             txtCliRua.Text = dataGrid_Clientes.CurrentRow.Cells["Rua"].Value.ToString();
             txtCliNumero.Text = dataGrid_Clientes.CurrentRow.Cells["Numero"].Value.ToString();
             txtCliTelefone.Text = dataGrid_Clientes.CurrentRow.Cells["Telefone"].Value.ToString();
-            txtCliSexo.Text = dataGrid_Clientes.CurrentRow.Cells["Sexo"].Value.ToString();
+
+            if (dataGrid_Clientes.CurrentRow.Cells["Sexo"].Value.ToString().Equals("Feminino"))
+            {
+                rbFeminino.Select();
+                
+            }
+            else
+            {
+                rbMasculino.Select();
+ 
+            }
+
         }
 
 
@@ -44,17 +53,32 @@ namespace projetodepizzaria
         private void btn_Adicionar_Click(object sender, EventArgs e)
         {
             //Fazendo a verificação dos campos 
-            if(txtCliNome.Equals("") || txtCliBairro.Equals("") || txtCliRua.Equals("") || txtCliNumero.Equals("") || txtCliTelefone.Equals("") || txtCliSexo.Equals(""))
+            if (txtCliNome.Equals("") || txtCliBairro.Equals("") || txtCliRua.Equals("") || txtCliNumero.Equals("") || txtCliTelefone.Equals("") || rbFeminino.Checked.Equals(false) && rbMasculino.Checked.Equals(false) )
             {
                 MessageBox.Show("Um ou mais campos não foram peenchidos.");
 
-            } else
+            }
+            else
             {
                 //Executar a query de INSERT no banco de dados 
+                DAOCadastroCliente.CadastrarEndereco(txtCliBairro.Text, txtCliRua.Text, txtCliNumero.Text);
+                DAOCadastroCliente.ResgatarCodigo(); //SEM PARÂMETROS
+                //Condicional para passar o atributo sexo
+                if (rbFeminino.Checked.Equals(true))
+                {
+                    DAOCadastroCliente.CadastrarCliente(txtCliNome.Text, txtCliTelefone.Text, rbFeminino.Text);
+
+                //Se o radioButton rbFeminino não estiver marcado, o rbMasculino estará.
+                } else
+                {
+                    DAOCadastroCliente.CadastrarCliente(txtCliNome.Text, txtCliTelefone.Text, rbMasculino.Text);
+                }
 
             }
 
 
         }
+
+      
     }
 }

@@ -118,19 +118,265 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="icone-deletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-deletar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-adicionar-cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-adicionar-cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-gerar-pedidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-gerar-pedidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaQuatroQueijos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PizzaQuatroQueijos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-funcionarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-funcionarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icone-entrar32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\icone-entrar32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icone-sair32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\icone-sair32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icone-delivery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-delivery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icone-atualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\icone-atualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icone-catupiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-catupiry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-adicionar-funcionario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-adicionar-funcionario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-historico-pedidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-historico-pedidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-CocaColaLata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-CocaColaLata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaCarneSol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PizzaCarneSol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icone-criar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\icone-criar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icone-PizzaCalabresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PizzaCalabresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaMussarela" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PizzaMussarela.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PorçãoBatata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PorçãoBatata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-adicionar-cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-adicionar-cadastro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-caixa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-caixa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-mulher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-mulher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-sair32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-sair32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-homem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-homem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-SucoLaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-SucoLaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaStrognoffCarne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PizzaStrognoffCarne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-Guaraná" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-Guaraná.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaVegetariana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PizzaVegetariana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-SucoMaracuja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-SucoMaracuja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaFrangoComBacon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PizzaFrangoComBacon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-adicionar-produto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-adicionar-produto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaMarguerita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PizzaMarguerita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaPalmito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PizzaPalmito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-atualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-atualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaPaulista" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PizzaPaulista.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-buscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-buscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-GuaranaLata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-GuaranaLata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-SucoMorango" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-SucoMorango.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PorçãoCarne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-PorçãoCarne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-CocaCola" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-CocaCola.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-cocacola290" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-cocacola290.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-pesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-pesquisar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-Hamburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\icone-Hamburger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-adicionar-cadastro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-adicionar-cadastro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-adicionar-cliente" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-adicionar-cliente.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-adicionar-funcionario" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-adicionar-funcionario.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-adicionar-produto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-adicionar-produto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-atualizar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-atualizar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-BDAtivo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-BDAtivo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-BDInativo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-BDInativo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-buscar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-buscar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-caixa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-caixa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-catupiry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-catupiry.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-CocaCola" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-CocaCola.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-cocacola290" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-cocacola290.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-CocaColaLata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-CocaColaLata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-comp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-comp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-criar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-criar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icone-deletar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\icone-deletar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\bin\Image\icone-deletar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-delivery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-delivery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-entrar32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-entrar32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-funcionarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-funcionarios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-gerar-pedidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-gerar-pedidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-Guaraná" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-Guaraná.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-GuaranaLata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-GuaranaLata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-Hamburger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-Hamburger.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-historico-pedidos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-historico-pedidos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-homem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-homem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-mulher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-mulher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-pesquisar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-pesquisar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaCalabresa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PizzaCalabresa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaCarneSol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PizzaCarneSol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaFrangoComBacon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PizzaFrangoComBacon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaMarguerita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PizzaMarguerita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaMussarela" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PizzaMussarela.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaPalmito" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PizzaPalmito.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaPaulista" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PizzaPaulista.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaQuatroQueijos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PizzaQuatroQueijos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaStrognoffCarne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PizzaStrognoffCarne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PizzaVegetariana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PizzaVegetariana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PorçãoBatata" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PorçãoBatata.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-PorçãoCarne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-PorçãoCarne.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-sair32px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-sair32px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-SucoLaranja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-SucoLaranja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-SucoMaracuja" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-SucoMaracuja.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-SucoMorango" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-SucoMorango.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icone-tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Image\icone-tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
