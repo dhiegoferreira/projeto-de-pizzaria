@@ -9,7 +9,8 @@ namespace projetodepizzaria
         public TelaLogin()
         {
             InitializeComponent();
-            CenterToScreen(); // TelaLogin.CenterToScreen Não faz sentido pois já está sendo construido
+            CenterToScreen(); // TelaLogin.CenterToScreen não é corrreto pois já está sendo construido
+            
 
 
         }
@@ -28,10 +29,12 @@ namespace projetodepizzaria
             }
             else
             {
-                //Aqui nós iremos passar os textos inseridos pelo usuário como parâmetros
-                Console.WriteLine(txtUsuario);
-                Console.WriteLine(txtSenha);
-                DAOLogin.autenticarFuncionario(txtUsuario.Text, txtSenha.Text);
+                
+                //Chamando o método de conusulta ao banco de dados e passando o texto inserido
+                //pelo usuário como parâmetro do método.
+                
+                DAOLogin.AutenticarFuncionario(txtUsuario.Text, txtSenha.Text);   
+                DAOLogin.AtualizarStatus();
                 
 
             }
@@ -39,13 +42,7 @@ namespace projetodepizzaria
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Console.WriteLine("Olá, mundo!");
-            //Chamar o método autenticação
-            autenticacao();
-
-        }
+      
 
         //Método de máscara para a senha
         private void txtSenha_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -57,6 +54,20 @@ namespace projetodepizzaria
         private void btnSair_Click(object sender, EventArgs e)
         {
             Dispose();
+        }
+
+
+        //Ação do botão Entrar
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            //Chamar o método autenticação
+            autenticacao();
+
+        }
+
+        private void TelaLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

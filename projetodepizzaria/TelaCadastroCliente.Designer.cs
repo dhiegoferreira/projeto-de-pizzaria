@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastroCliente));
             this.dataGrid_Clientes = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,14 +41,17 @@
             this.txtCliBairro = new System.Windows.Forms.TextBox();
             this.txtCliRua = new System.Windows.Forms.TextBox();
             this.txtCliNumero = new System.Windows.Forms.TextBox();
-            this.btn_Adicionar = new System.Windows.Forms.Button();
-            this.btn_Atualizar = new System.Windows.Forms.Button();
-            this.btn_Deletar = new System.Windows.Forms.Button();
+            this.btnAdicionar = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.btnDeletar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtCliTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.maskTextCliTel = new System.Windows.Forms.MaskedTextBox();
             this.pbSexoImagem = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Clientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSexoImagem)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGrid_Clientes
@@ -66,8 +70,9 @@
             this.dataGrid_Clientes.ReadOnly = true;
             this.dataGrid_Clientes.RowTemplate.Height = 25;
             this.dataGrid_Clientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGrid_Clientes.Size = new System.Drawing.Size(768, 163);
+            this.dataGrid_Clientes.Size = new System.Drawing.Size(751, 163);
             this.dataGrid_Clientes.TabIndex = 1;
+            this.dataGrid_Clientes.TabStop = false;
             this.dataGrid_Clientes.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGrid_Clientes_MouseClick);
             // 
             // label1
@@ -128,11 +133,11 @@
             // rbFeminino
             // 
             this.rbFeminino.AutoSize = true;
-            this.rbFeminino.Location = new System.Drawing.Point(479, 325);
+            this.rbFeminino.Location = new System.Drawing.Point(9, 4);
             this.rbFeminino.Margin = new System.Windows.Forms.Padding(4);
             this.rbFeminino.Name = "rbFeminino";
             this.rbFeminino.Size = new System.Drawing.Size(92, 24);
-            this.rbFeminino.TabIndex = 8;
+            this.rbFeminino.TabIndex = 7;
             this.rbFeminino.TabStop = true;
             this.rbFeminino.Text = "Feminino";
             this.rbFeminino.UseVisualStyleBackColor = true;
@@ -140,38 +145,42 @@
             // rbMasculino
             // 
             this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(479, 357);
+            this.rbMasculino.Location = new System.Drawing.Point(9, 31);
             this.rbMasculino.Margin = new System.Windows.Forms.Padding(4);
             this.rbMasculino.Name = "rbMasculino";
             this.rbMasculino.Size = new System.Drawing.Size(98, 24);
-            this.rbMasculino.TabIndex = 9;
+            this.rbMasculino.TabIndex = 8;
             this.rbMasculino.TabStop = true;
             this.rbMasculino.Text = "Masculino";
             this.rbMasculino.UseVisualStyleBackColor = true;
             // 
             // txtCliNome
             // 
+            this.txtCliNome.AcceptsTab = true;
             this.txtCliNome.Location = new System.Drawing.Point(79, 213);
             this.txtCliNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtCliNome.Name = "txtCliNome";
+            this.txtCliNome.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtCliNome.Size = new System.Drawing.Size(268, 26);
-            this.txtCliNome.TabIndex = 10;
+            this.txtCliNome.TabIndex = 1;
             // 
             // txtCliBairro
             // 
+            this.txtCliBairro.AcceptsTab = true;
             this.txtCliBairro.Location = new System.Drawing.Point(79, 254);
             this.txtCliBairro.Margin = new System.Windows.Forms.Padding(4);
             this.txtCliBairro.Name = "txtCliBairro";
             this.txtCliBairro.Size = new System.Drawing.Size(268, 26);
-            this.txtCliBairro.TabIndex = 11;
+            this.txtCliBairro.TabIndex = 2;
             // 
             // txtCliRua
             // 
+            this.txtCliRua.AcceptsTab = true;
             this.txtCliRua.Location = new System.Drawing.Point(79, 294);
             this.txtCliRua.Margin = new System.Windows.Forms.Padding(4);
             this.txtCliRua.Name = "txtCliRua";
             this.txtCliRua.Size = new System.Drawing.Size(268, 26);
-            this.txtCliRua.TabIndex = 12;
+            this.txtCliRua.TabIndex = 3;
             // 
             // txtCliNumero
             // 
@@ -179,40 +188,41 @@
             this.txtCliNumero.Margin = new System.Windows.Forms.Padding(4);
             this.txtCliNumero.Name = "txtCliNumero";
             this.txtCliNumero.Size = new System.Drawing.Size(268, 26);
-            this.txtCliNumero.TabIndex = 13;
+            this.txtCliNumero.TabIndex = 6;
             // 
-            // btn_Adicionar
+            // btnAdicionar
             // 
-            this.btn_Adicionar.AutoSize = true;
-            this.btn_Adicionar.Image = global::DesktopApp.Properties.Resources.icone_criar;
-            this.btn_Adicionar.Location = new System.Drawing.Point(158, 441);
-            this.btn_Adicionar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Adicionar.Name = "btn_Adicionar";
-            this.btn_Adicionar.Size = new System.Drawing.Size(103, 107);
-            this.btn_Adicionar.TabIndex = 16;
-            this.btn_Adicionar.UseVisualStyleBackColor = true;
-            this.btn_Adicionar.Click += new System.EventHandler(this.btn_Adicionar_Click);
+            this.btnAdicionar.AutoSize = true;
+            this.btnAdicionar.Image = ((System.Drawing.Image)(resources.GetObject("btnAdicionar.Image")));
+            this.btnAdicionar.Location = new System.Drawing.Point(198, 408);
+            this.btnAdicionar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Size = new System.Drawing.Size(80, 80);
+            this.btnAdicionar.TabIndex = 9;
+            this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
-            // btn_Atualizar
+            // btnAtualizar
             // 
-            this.btn_Atualizar.Image = global::DesktopApp.Properties.Resources.icone_atualizar;
-            this.btn_Atualizar.Location = new System.Drawing.Point(309, 441);
-            this.btn_Atualizar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Atualizar.Name = "btn_Atualizar";
-            this.btn_Atualizar.Size = new System.Drawing.Size(103, 107);
-            this.btn_Atualizar.TabIndex = 17;
-            this.btn_Atualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnAtualizar.Image")));
+            this.btnAtualizar.Location = new System.Drawing.Point(328, 408);
+            this.btnAtualizar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(80, 80);
+            this.btnAtualizar.TabIndex = 10;
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
-            // btn_Deletar
+            // btnDeletar
             // 
-            this.btn_Deletar.Enabled = false;
-            this.btn_Deletar.Image = global::DesktopApp.Properties.Resources.icone_deletar;
-            this.btn_Deletar.Location = new System.Drawing.Point(466, 441);
-            this.btn_Deletar.Margin = new System.Windows.Forms.Padding(4);
-            this.btn_Deletar.Name = "btn_Deletar";
-            this.btn_Deletar.Size = new System.Drawing.Size(103, 107);
-            this.btn_Deletar.TabIndex = 18;
-            this.btn_Deletar.UseVisualStyleBackColor = true;
+            this.btnDeletar.Enabled = false;
+            this.btnDeletar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletar.Image")));
+            this.btnDeletar.Location = new System.Drawing.Point(449, 408);
+            this.btnDeletar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDeletar.Name = "btnDeletar";
+            this.btnDeletar.Size = new System.Drawing.Size(80, 80);
+            this.btnDeletar.TabIndex = 11;
+            this.btnDeletar.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -225,39 +235,67 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Sexo:";
             // 
-            // txtCliTelefone
+            // maskTextCliTel
             // 
-            this.txtCliTelefone.Location = new System.Drawing.Point(479, 210);
-            this.txtCliTelefone.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCliTelefone.Mask = "(##) #####-####";
-            this.txtCliTelefone.Name = "txtCliTelefone";
-            this.txtCliTelefone.Size = new System.Drawing.Size(268, 26);
-            this.txtCliTelefone.TabIndex = 19;
+            this.maskTextCliTel.AllowPromptAsInput = false;
+            this.maskTextCliTel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.maskTextCliTel.HidePromptOnLeave = true;
+            this.maskTextCliTel.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
+            this.maskTextCliTel.Location = new System.Drawing.Point(479, 210);
+            this.maskTextCliTel.Margin = new System.Windows.Forms.Padding(4);
+            this.maskTextCliTel.Mask = "(##)#####-####";
+            this.maskTextCliTel.Name = "maskTextCliTel";
+            this.maskTextCliTel.ResetOnPrompt = false;
+            this.maskTextCliTel.ResetOnSpace = false;
+            this.maskTextCliTel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.maskTextCliTel.Size = new System.Drawing.Size(268, 26);
+            this.maskTextCliTel.TabIndex = 5;
+            this.maskTextCliTel.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCliTelefone_MaskInputRejected);
             // 
             // pbSexoImagem
             // 
-            this.pbSexoImagem.Location = new System.Drawing.Point(590, 300);
+            this.pbSexoImagem.Location = new System.Drawing.Point(627, 299);
             this.pbSexoImagem.Name = "pbSexoImagem";
-            this.pbSexoImagem.Size = new System.Drawing.Size(157, 139);
+            this.pbSexoImagem.Size = new System.Drawing.Size(110, 110);
             this.pbSexoImagem.TabIndex = 20;
             this.pbSexoImagem.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.rbFeminino);
+            this.panel1.Controls.Add(this.rbMasculino);
+            this.panel1.Location = new System.Drawing.Point(479, 324);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(114, 60);
+            this.panel1.TabIndex = 21;
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(32, 350);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(123, 29);
+            this.btnLimpar.TabIndex = 4;
+            this.btnLimpar.Text = "limpar campos";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // TelaCadastroCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(794, 561);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(794, 501);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbSexoImagem);
-            this.Controls.Add(this.txtCliTelefone);
-            this.Controls.Add(this.btn_Deletar);
-            this.Controls.Add(this.btn_Atualizar);
-            this.Controls.Add(this.btn_Adicionar);
+            this.Controls.Add(this.maskTextCliTel);
+            this.Controls.Add(this.btnDeletar);
+            this.Controls.Add(this.btnAtualizar);
+            this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.txtCliNumero);
             this.Controls.Add(this.txtCliRua);
             this.Controls.Add(this.txtCliBairro);
             this.Controls.Add(this.txtCliNome);
-            this.Controls.Add(this.rbMasculino);
-            this.Controls.Add(this.rbFeminino);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -266,12 +304,18 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGrid_Clientes);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TelaCadastroCliente";
+            this.ShowIcon = false;
             this.Text = "Cadastro Cliente";
             this.Load += new System.EventHandler(this.CadastroCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Clientes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSexoImagem)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,11 +334,13 @@
         private TextBox txtCliBairro;
         private TextBox txtCliRua;
         private TextBox txtCliNumero;
-        private Button btn_Adicionar;
-        private Button btn_Atualizar;
-        private Button btn_Deletar;
+        private Button btnAdicionar;
+        private Button btnAtualizar;
+        private Button btnDeletar;
         private Label label6;
-        private MaskedTextBox txtCliTelefone;
+        private MaskedTextBox maskTextCliTel;
         private PictureBox pbSexoImagem;
+        private Panel panel1;
+        private Button btnLimpar;
     }
 }

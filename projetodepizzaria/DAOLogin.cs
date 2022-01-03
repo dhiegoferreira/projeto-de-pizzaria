@@ -12,9 +12,13 @@ using MySql.Data;
 
 namespace projetodepizzaria
 {
+   
     public class DAOLogin
     {
-        
+        public static string nomeFunLogado; //Para armazenar o nome do funcionário logado
+        public static string data;
+        public static string funPerfil;
+
         //Preparando a string de conexão
         //O local, o tipo e o 
         public static string StringDeConexao = "server=localhost;uid=root; " +
@@ -24,15 +28,18 @@ namespace projetodepizzaria
         public static MySqlConnection conn = new MySqlConnection(StringDeConexao);
 
 
+
+
         //Método responsável pela autenticação do usuário no BD
-        public static void autenticarFuncionario(string usuario, string senha){
+        public static void AutenticarFuncionario(string usuario, string senha){
+
+            //Passando a string SQL para consulta
+            string sql = "SELECT fun_usuario, fun_senha, fun_nome, fun_perfil FROM funcionarios WHERE fun_usuario=@funusuario and fun_senha=@funsenha";
+
             try
             {
                 Console.WriteLine("Conectando ao BD e fazendo a autenticação...");
                 conn.Open();//Conexão aberta
-
-                //Passando a string SQL para consulta
-                string sql = "SELECT * FROM funcionarios WHERE fun_usuario=@funusuario and fun_senha=@funsenha";
 
                 //Criando uma instancia do MySqlCommand
                 MySqlCommand cmd = new(sql, conn); //simplicada de new MySqlComman(sql, conn);
@@ -46,11 +53,23 @@ namespace projetodepizzaria
 
                 if (rdr.Read())
                 {
-                    MessageBox.Show("Usuário encontrado com sucesso!");
-                    //Abrir tela Principal;
-                    TelaCadastroCliente telacad = new TelaCadastroCliente();
-                    telacad.Show();
+                   
+                    data = DateTime.Now.ToString("dd/MM/yyyy"); 
+                    nomeFunLogado = rdr[2].ToString();
+                    funPerfil = rdr[3].ToString();
+                    TelaPrincipal telaprincipal = new TelaPrincipal();
+                    telaprincipal.Show();
 
+                    if(funPerfil.Equals("admin"))
+                    {
+                        telaprincipal.txtUsuarioNome.Text = nomeFunLogado;
+                        telaprincipal.txtUsuarioNome.ForeColor = System.Drawing.Color.Red;
+
+
+                    } 
+
+                    telaprincipal.txtDataPrincipal.Text = data;
+                    
 
                 } else
                 {
@@ -67,11 +86,54 @@ namespace projetodepizzaria
             {
                 //Finalizar a conexão
                 conn.Close();
-                Console.WriteLine("Conexão finalizada");
+              
 
             }
 
             
+
+        }
+
+
+
+        //Método booleano para alterar o status da sessão do funcionário
+        public static bool AtualizarStatus()
+        {
+            String sql = "UPDATE funcionarios SET fun_status=@fun_status WHERE fun_usuario=@fun_usuario";
+
+            try
+            {
+                //Abrindo a conexao
+                conn.Open();
+
+                MySqlCommand cmd = new MySqlCommand(sql, conn);
+
+                cmd.Parameters.AddWithValue("@fun_status", "Conectado");
+                cmd.Parameters.AddWithValue("@fun_usuario", nomeFunLogado);
+
+
+                int adicionar = cmd.ExecuteNonQuery();
+
+                if(adicionar > 0){
+                   
+
+                }
+
+
+
+
+                return true;
+            } catch (MySqlException ex)
+            {
+
+                MessageBox.Show(ex.Message);
+                return false;
+            } finally
+            {
+
+                conn.Close();
+
+            }
 
         }
 
