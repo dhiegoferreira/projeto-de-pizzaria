@@ -18,16 +18,20 @@ namespace projetodepizzaria
 
         }
 
-        //Quando o componente for carregado
-        private void CadastroCliente_Load(object sender, EventArgs e)
-        {
-            //Passar a string sql como parÂmetro
-            // DAOCadastroCliente.ObterDados
-            DAOCadastroCliente.ObterDados(dataGrid_Clientes);
 
+        private void LimparCampos()
+        {
+            txtCliNome.Text = "";
+            txtCliBairro.Text = "";
+            txtCliRua.Text = "";
+            txtCliNumero.Text = "";
+            maskTextCliTel.Text = "";
+            rbFeminino.Checked = false;
+            rbMasculino.Checked = false;
         }
 
-        private void dataGrid_Clientes_MouseClick(object sender, MouseEventArgs e)
+
+        private void SetarCampos()
         {
             txtCliNome.Text = dataGrid_Clientes.CurrentRow.Cells["Nome"].Value.ToString();
             txtCliBairro.Text = dataGrid_Clientes.CurrentRow.Cells["Bairro"].Value.ToString();
@@ -46,6 +50,22 @@ namespace projetodepizzaria
 
             }
 
+
+        }
+
+
+        //Quando o componente for carregado
+        private void CadastroCliente_Load(object sender, EventArgs e)
+        {
+            //Passar a string sql como parÂmetro
+            // DAOCadastroCliente.ObterDados
+            DAOCadastroCliente.ObterDados(dataGrid_Clientes);
+
+        }
+
+        private void dataGrid_Clientes_MouseClick(object sender, MouseEventArgs e)
+        {
+            SetarCampos();
         }
 
 
@@ -69,12 +89,19 @@ namespace projetodepizzaria
                 if (rbFeminino.Checked.Equals(true))
                 {
                     DAOCadastroCliente.CadastrarCliente(txtCliNome.Text, maskTextCliTel.Text, rbFeminino.Text, "INSERT INTO clientes(cli_nome, cli_telefone, cli_sexo, cli_end_fk) VALUES(@clinome, @cli_telefone, @cli_sexo, @cli_end_fk)");
+                    //Passar a string sql como parÂmetro
+                    // DAOCadastroCliente.ObterDados
+                    DAOCadastroCliente.ObterDados(dataGrid_Clientes);
 
-                    //Se o radioButton rbFeminino não estiver marcado, o rbMasculino estará.
+
+
                 }
                 else
                 {
                     DAOCadastroCliente.CadastrarCliente(txtCliNome.Text, maskTextCliTel.Text, rbMasculino.Text, "INSERT INTO clientes(cli_nome, cli_telefone, cli_sexo, cli_end_fk) VALUES(@clinome, @cli_telefone, @cli_sexo, @cli_end_fk)");
+                    //Passar a string sql como parÂmetro
+                    // DAOCadastroCliente.ObterDados
+                    DAOCadastroCliente.ObterDados(dataGrid_Clientes);
                 }
 
             }
@@ -84,13 +111,7 @@ namespace projetodepizzaria
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
-            txtCliNome.Text = "";
-            txtCliBairro.Text = "";
-            txtCliRua.Text = "";
-            txtCliNumero.Text = "";
-            maskTextCliTel.Text = "";
-            rbFeminino.Checked = false;
-            rbMasculino.Checked = false;
+            LimparCampos();
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
@@ -110,13 +131,24 @@ namespace projetodepizzaria
                 //Condicional para passar o conteúdo do radiobutton selecionado
                 if (rbFeminino.Checked.Equals(true))
                 {
+                    MessageBox.Show(dataGrid_Clientes.CurrentRow.Cells["Código"].Value.ToString());
                     DAOCadastroCliente.AtualizarCliente(txtCliNome.Text, maskTextCliTel.Text, rbFeminino.Text, dataGrid_Clientes.CurrentRow.Cells["Código"].Value.ToString());
+                    //Passar a string sql como parÂmetro
+                    // DAOCadastroCliente.ObterDados
+                    DAOCadastroCliente.ObterDados(dataGrid_Clientes);
+
 
                     //Se o radioButton rbFeminino não estiver marcado, o rbMasculino estará.
                 }
                 else
                 {
+                    MessageBox.Show(dataGrid_Clientes.CurrentRow.Cells["Código"].Value.ToString());
                     DAOCadastroCliente.AtualizarCliente(txtCliNome.Text, maskTextCliTel.Text, rbMasculino.Text, dataGrid_Clientes.CurrentRow.Cells["Código"].Value.ToString());
+                    //Passar a string sql como parÂmetro
+                    // DAOCadastroCliente.ObterDados
+                    DAOCadastroCliente.ObterDados(dataGrid_Clientes);
+
+
                 }
 
 
@@ -128,14 +160,23 @@ namespace projetodepizzaria
 
         }
 
-        private void txtCliTelefone_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-            this.maskTextCliTel.Focus();
-        }
+       
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            this.Dispose();
+            
+        }
+
+        private void TelaCadastroCliente_Activated(object sender, EventArgs e)
+        {
+           
         }
     }
 

@@ -38,15 +38,13 @@
             this.btnEntrar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.maskedTextBox1);
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.pbLogo);
             this.panel1.Controls.Add(this.txtSenha);
             this.panel1.Controls.Add(this.lblNomeSistema);
@@ -73,7 +71,7 @@
             // 
             this.txtSenha.Location = new System.Drawing.Point(151, 211);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(236, 25);
+            this.txtSenha.Size = new System.Drawing.Size(236, 23);
             this.txtSenha.TabIndex = 2;
             this.txtSenha.UseSystemPasswordChar = true;
             this.txtSenha.ValidatingType = typeof(int);
@@ -147,15 +145,8 @@
             this.txtUsuario.AcceptsTab = true;
             this.txtUsuario.Location = new System.Drawing.Point(151, 171);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(236, 25);
+            this.txtUsuario.Size = new System.Drawing.Size(236, 23);
             this.txtUsuario.TabIndex = 1;
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(417, 128);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(100, 25);
-            this.maskedTextBox1.TabIndex = 12;
             // 
             // TelaLogin
             // 
@@ -186,6 +177,5 @@
         private TextBox txtUsuario;
         private MaskedTextBox txtSenha;
         private PictureBox pbLogo;
-        private MaskedTextBox maskedTextBox1;
     }
 }

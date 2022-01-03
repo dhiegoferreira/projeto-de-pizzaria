@@ -31,7 +31,9 @@ namespace projetodepizzaria
             TelaCadastroCliente telacadcli = new TelaCadastroCliente();
             telacadcli.TopLevel = false;
             desktopPanel.Controls.Add(telacadcli);
+            telacadcli.FormBorderStyle = FormBorderStyle.None;
             telacadcli.Show();
+            
             
            
 
@@ -49,6 +51,7 @@ namespace projetodepizzaria
             telacadfunc.TopLevel = false;
             desktopPanel.Controls.Add(telacadfunc);
             telacadfunc.Show();
+            
         }
 
         private void entregadorToolStripMenuItem_Click(object sender, EventArgs e)

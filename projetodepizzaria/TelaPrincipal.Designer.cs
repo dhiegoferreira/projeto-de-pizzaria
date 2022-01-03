@@ -59,7 +59,7 @@ namespace projetodepizzaria
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnSairPrincipal);
             this.panel1.Controls.Add(this.panel3);
@@ -69,13 +69,13 @@ namespace projetodepizzaria
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Location = new System.Drawing.Point(0, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1062, 585);
+            this.panel1.Size = new System.Drawing.Size(1062, 578);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(853, 94);
+            this.pictureBox1.Location = new System.Drawing.Point(853, 83);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -87,9 +87,9 @@ namespace projetodepizzaria
             this.btnSairPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSairPrincipal.Image = ((System.Drawing.Image)(resources.GetObject("btnSairPrincipal.Image")));
             this.btnSairPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSairPrincipal.Location = new System.Drawing.Point(968, 538);
+            this.btnSairPrincipal.Location = new System.Drawing.Point(961, 529);
             this.btnSairPrincipal.Name = "btnSairPrincipal";
-            this.btnSairPrincipal.Size = new System.Drawing.Size(91, 43);
+            this.btnSairPrincipal.Size = new System.Drawing.Size(91, 38);
             this.btnSairPrincipal.TabIndex = 6;
             this.btnSairPrincipal.Text = "SAIR";
             this.btnSairPrincipal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -103,54 +103,54 @@ namespace projetodepizzaria
             this.panel3.Controls.Add(this.txtUsuarioNome);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(821, 246);
+            this.panel3.Location = new System.Drawing.Point(819, 260);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(231, 113);
+            this.panel3.Size = new System.Drawing.Size(231, 100);
             this.panel3.TabIndex = 5;
             // 
             // txtDataPrincipal
             // 
             this.txtDataPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDataPrincipal.Location = new System.Drawing.Point(63, 74);
+            this.txtDataPrincipal.Location = new System.Drawing.Point(63, 65);
             this.txtDataPrincipal.Name = "txtDataPrincipal";
-            this.txtDataPrincipal.Size = new System.Drawing.Size(163, 33);
+            this.txtDataPrincipal.Size = new System.Drawing.Size(163, 29);
             this.txtDataPrincipal.TabIndex = 5;
             // 
             // txtUsuarioNome
             // 
             this.txtUsuarioNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUsuarioNome.Location = new System.Drawing.Point(63, 32);
+            this.txtUsuarioNome.Location = new System.Drawing.Point(63, 28);
             this.txtUsuarioNome.Name = "txtUsuarioNome";
-            this.txtUsuarioNome.Size = new System.Drawing.Size(163, 25);
+            this.txtUsuarioNome.Size = new System.Drawing.Size(163, 22);
             this.txtUsuarioNome.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(3, 74);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(3, 65);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 23);
+            this.label5.Size = new System.Drawing.Size(66, 24);
             this.label5.TabIndex = 1;
             this.label5.Text = "DATA:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(3, 32);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(3, 28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 23);
+            this.label4.Size = new System.Drawing.Size(66, 24);
             this.label4.TabIndex = 0;
             this.label4.Text = "USER:";
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(886, 217);
+            this.label3.Location = new System.Drawing.Point(863, 222);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 26);
+            this.label3.Size = new System.Drawing.Size(140, 23);
             this.label3.TabIndex = 4;
             this.label3.Text = "Bem Vindo!";
             // 
@@ -158,16 +158,16 @@ namespace projetodepizzaria
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(853, 11);
+            this.label1.Location = new System.Drawing.Point(853, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 69);
+            this.label1.Size = new System.Drawing.Size(180, 61);
             this.label1.TabIndex = 2;
             this.label1.Text = "SGP";
             // 
             // desktopPanel
             // 
             this.desktopPanel.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.desktopPanel.Location = new System.Drawing.Point(3, 41);
+            this.desktopPanel.Location = new System.Drawing.Point(3, 36);
             this.desktopPanel.Name = "desktopPanel";
             this.desktopPanel.Size = new System.Drawing.Size(810, 540);
             this.desktopPanel.TabIndex = 1;
@@ -183,7 +183,7 @@ namespace projetodepizzaria
             this.menuMonitor});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(813, 38);
+            this.menuStrip1.Size = new System.Drawing.Size(813, 41);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -198,7 +198,7 @@ namespace projetodepizzaria
             this.menuCad.Image = ((System.Drawing.Image)(resources.GetObject("menuCad.Image")));
             this.menuCad.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuCad.Name = "menuCad";
-            this.menuCad.Size = new System.Drawing.Size(126, 34);
+            this.menuCad.Size = new System.Drawing.Size(126, 37);
             this.menuCad.Text = "Cadastro";
             // 
             // menuCadCli
@@ -245,7 +245,7 @@ namespace projetodepizzaria
             this.menuCaixa.Image = ((System.Drawing.Image)(resources.GetObject("menuCaixa.Image")));
             this.menuCaixa.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuCaixa.Name = "menuCaixa";
-            this.menuCaixa.Size = new System.Drawing.Size(101, 34);
+            this.menuCaixa.Size = new System.Drawing.Size(101, 37);
             this.menuCaixa.Text = "Caixa";
             // 
             // menuCaixaPed
@@ -264,7 +264,7 @@ namespace projetodepizzaria
             this.menuMonitor.Image = ((System.Drawing.Image)(resources.GetObject("menuMonitor.Image")));
             this.menuMonitor.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuMonitor.Name = "menuMonitor";
-            this.menuMonitor.Size = new System.Drawing.Size(216, 34);
+            this.menuMonitor.Size = new System.Drawing.Size(216, 37);
             this.menuMonitor.Text = "Monitor de Pedidos";
             // 
             // menuMonitorPed
@@ -277,9 +277,9 @@ namespace projetodepizzaria
             // 
             // TelaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 581);
+            this.ClientSize = new System.Drawing.Size(1064, 577);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -304,7 +304,6 @@ namespace projetodepizzaria
         private Panel panel1;
         private Label label3;
         private Label label1;
-        private Panel desktopPanel;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem menuCad;
         private ToolStripMenuItem menuCadFunc;
@@ -322,5 +321,6 @@ namespace projetodepizzaria
         private PictureBox pictureBox1;
         public Label txtUsuarioNome;
         public Label txtDataPrincipal;
+        private Panel desktopPanel;
     }
 }

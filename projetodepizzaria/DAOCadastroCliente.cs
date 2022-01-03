@@ -21,20 +21,23 @@ namespace projetodepizzaria
         //definindo fora da função obter dados
         public static string StringDeConexao = "server=localhost;uid=root;pwd=;database=bancoteste";
 
-      
-        //Essa conexão não pode ser fechada, pois estamos recuperando dados da tabela em realtime.
+       
+        
+
+
+
         public static void ObterDados(DataGridView datagrid1)
         {
-
             string sql = "SELECT c.cli_cod AS Código, c.cli_nome AS Nome, e.end_bairro AS Bairro, e.end_rua AS Rua, e.end_numero AS Numero, c.cli_telefone AS Telefone, c.cli_sexo AS Sexo FROM clientes AS c JOIN endereco AS e ON c.cli_end_fk = e.end_cod";
 
-            //Criando um objeto do tipo adaptador de dados e passando a string de consulta e a string de conexao
-            MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sql, StringDeConexao);
+            MySqlConnection conn = new MySqlConnection(StringDeConexao);
 
             try
             {
-                
-
+                conn.Open();
+             
+                //Criando um objeto do tipo adaptador de dados e passando a string de consulta e a string de conexao
+                MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sql, StringDeConexao);
 
                 //populando dados na tabela
                 DataTable table = new DataTable();
@@ -45,10 +48,15 @@ namespace projetodepizzaria
 
 
 
-            } catch (MySqlException ex)
+            }
+            catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
-            } 
+            } finally
+            {
+                conn.Close();
+
+            }
 
         }
 
@@ -58,13 +66,16 @@ namespace projetodepizzaria
 
         public static void CadastrarEndereco(String bairro, String rua, String numero)
         {
+
+            string sql = "INSERT INTO endereco(end_bairro, end_rua, end_numero) VALUES(@endbairro, @endrua, @endnumero)";
+
             MySqlConnection conn = new MySqlConnection(StringDeConexao);
 
             try
             {
                 conn.Open();
 
-                string sql = "INSERT INTO endereco(end_bairro, end_rua, end_numero) VALUES(@endbairro, @endrua, @endnumero)";
+                
 
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 
@@ -84,6 +95,7 @@ namespace projetodepizzaria
 
             } finally
             {
+                //vamos fechar apenas quando clicado no botão fechar janela.
                 conn.Close();
 
             }
@@ -95,13 +107,14 @@ namespace projetodepizzaria
  
         public static void ResgatarCodigo()
         {
+
+            string sql = "SELECT end_cod FROM endereco WHERE end_cod ORDER BY end_cod DESC LIMIT 1";
+
             MySqlConnection conn = new MySqlConnection(StringDeConexao);
 
             try
             {
                 conn.Open();
-
-                string sql = "SELECT end_cod FROM endereco WHERE end_cod ORDER BY end_cod DESC LIMIT 1";
 
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 
@@ -116,8 +129,6 @@ namespace projetodepizzaria
                 {
                     MessageBox.Show("Não encontramos o código");
                 }
-
-
 
             } catch (MySqlException ex)
             {
@@ -134,7 +145,6 @@ namespace projetodepizzaria
         //MÉTODO QUE VAI INSERIR O NOME,  NO BANCO DE DADOS.
         public static void CadastrarCliente(String nome, String telefone, string sexo, string sql) 
         {
-            //Criando um sessão de conexão, passando a string de conexão para o objeto criado.
             MySqlConnection conn = new MySqlConnection(StringDeConexao);
 
             try
@@ -146,8 +156,6 @@ namespace projetodepizzaria
                 string sql = "INSERT INTO clientes(cli_nome, cli_telefone, cli_sexo, cli_end_fk) VALUES(@clinome, @cli_telefone, @cli_sexo, @cli_end_fk)";
 
                */
-
-
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 
                 //Passando os valores para a string sql
@@ -156,13 +164,9 @@ namespace projetodepizzaria
                 cmd.Parameters.AddWithValue("@cli_sexo", sexo);
                 cmd.Parameters.AddWithValue("@cli_end_fk", codigo);
 
-
                 //ExecuteNonQuery para inserção, atualização e exclusão de dados 
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Cliente adicionado com sucesso!");
-
-
-
 
             //passando as excessões para uma varivável local ex
             } catch (MySqlException ex)
@@ -184,7 +188,7 @@ namespace projetodepizzaria
 
         public static void CodigoEndereco(String nomeCliente)
         {
-            String sql = "SELECT cli_end_cod FROM clientes WHERE cli_nome=@cli_nome";
+            String sql = "SELECT cli_end_fk FROM clientes WHERE cli_nome=@cli_nome";
 
             MySqlConnection conn = new MySqlConnection(StringDeConexao);
 
@@ -195,15 +199,14 @@ namespace projetodepizzaria
 
                 MySqlCommand cmd = new MySqlCommand(sql, conn);
 
-                cmd.Parameters.AddWithValue("@cli_cod", nomeCliente);
+                cmd.Parameters.AddWithValue("@cli_nome", nomeCliente);
 
                 MySqlDataReader rdr = cmd.ExecuteReader();
 
 
-
                 if (rdr.Read())
                 {
-                    //Recebendo a chave estrangeiro do cliente selecionado
+                    //Recebendo a chave estrangeira do cliente selecionado
                     cliEndCod = rdr[0].ToString();
 
                 }
@@ -233,6 +236,7 @@ namespace projetodepizzaria
             string sql = "UPDATE endereco SET end_bairro=@end_bairro, end_rua=@end_rua, end_numero=@end_numero WHERE end_cod=@end_cod";
 
             MySqlConnection conn = new MySqlConnection(StringDeConexao);
+
             try
             {
 
@@ -257,6 +261,9 @@ namespace projetodepizzaria
             } catch (MySqlException ex)
             {
                 MessageBox.Show(ex.Message);
+
+            } finally {
+                conn.Close();
 
             }
 
