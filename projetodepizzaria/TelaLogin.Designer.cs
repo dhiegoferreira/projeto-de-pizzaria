@@ -1,5 +1,7 @@
-﻿namespace projetodepizzaria
+﻿namespace DesktopApp
 {
+
+
     partial class TelaLogin
     {
         /// <summary>

@@ -10,7 +10,7 @@ using MySql.Data;
 
 //Esta classe é responsável por fazer a conexao com o banco de dados
 
-namespace projetodepizzaria
+namespace DesktopApp
 {
    
     public class DAOLogin

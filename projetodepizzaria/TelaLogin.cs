@@ -1,6 +1,6 @@
 using System.Diagnostics;
 
-namespace projetodepizzaria
+namespace DesktopApp
 {
     public partial class TelaLogin : Form
     {
@@ -10,7 +10,7 @@ namespace projetodepizzaria
         {
             InitializeComponent();
             CenterToScreen(); // TelaLogin.CenterToScreen não é corrreto pois já está sendo construido
-            
+           
 
 
         }

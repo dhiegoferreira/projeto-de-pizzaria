@@ -1,4 +1,4 @@
-﻿namespace projetodepizzaria
+﻿namespace DesktopApp
 {
     partial class TelaCadastroProduto
     {
@@ -142,6 +142,7 @@
             this.button1.Size = new System.Drawing.Size(80, 71);
             this.button1.TabIndex = 15;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox5
             // 

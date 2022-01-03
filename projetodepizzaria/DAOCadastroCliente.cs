@@ -10,7 +10,7 @@ using System.Globalization;
 
 
 
-namespace projetodepizzaria
+namespace DesktopApp
 {
     public class DAOCadastroCliente
     {
@@ -21,12 +21,50 @@ namespace projetodepizzaria
         //definindo fora da função obter dados
         public static string StringDeConexao = "server=localhost;uid=root;pwd=;database=bancoteste";
 
-       
-        
+
+
+        /*
+        public static void Pesquisar(String clienteNome)
+        {
+            string sql = "SELECT c.cli_cod AS Código, c.cli_nome AS Nome, e.end_bairro AS Bairro, e.end_rua AS Rua, e.end_numero AS Numero, c.cli_telefone AS Telefone, c.cli_sexo AS Sexo FROM clientes AS c JOIN endereco AS e ON c.cli_end_fk = e.end_cod WHERE c.cli_nome LIKE @cli_nome";
+
+            MySqlConnection conn = new MySqlConnection();
+
+            try
+            {
+                //Abrindo a conexão
+                conn.Open();
+
+
+                //Instanciando um objeto MySqlCommand responsável por passar a instrução sql
+                MySqlDataAdapter adaptadorDeDados = new MySqlDataAdapter(sql, StringDeConexao);
+
+
+                adaptadorDeDados.GetFillParameters()
+
+                cmd.Parameters.AddWithValue("@cli_nome", clienteNome + "%");
+
+                MySqlDataReader rdr = cmd.ExecuteReader();
+
+            } catch (MySqlException ex)
+            {
+
+
+            } finally
+            {
+
+                conn.Close();
+
+            }
+
+        }
+        */
 
 
 
-        public static void ObterDados(DataGridView datagrid1)
+
+        public static void ObterDados(DataGridView tblClientes
+            )
         {
             string sql = "SELECT c.cli_cod AS Código, c.cli_nome AS Nome, e.end_bairro AS Bairro, e.end_rua AS Rua, e.end_numero AS Numero, c.cli_telefone AS Telefone, c.cli_sexo AS Sexo FROM clientes AS c JOIN endereco AS e ON c.cli_end_fk = e.end_cod";
 
@@ -35,16 +73,16 @@ namespace projetodepizzaria
             try
             {
                 conn.Open();
-             
+
                 //Criando um objeto do tipo adaptador de dados e passando a string de consulta e a string de conexao
-                MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sql, StringDeConexao);
+                MySqlDataAdapter AdatadorDeDados = new MySqlDataAdapter(sql, StringDeConexao);
 
                 //populando dados na tabela
                 DataTable table = new DataTable();
 
-                dataAdapter.Fill(table);
+               AdatadorDeDados.Fill(table);
 
-                datagrid1.DataSource = table;
+                tblClientes.DataSource = table;
 
 
 
@@ -221,12 +259,6 @@ namespace projetodepizzaria
                 conn.Close();
 
             }
-
-
-
-
-
-
         }
 
 
@@ -254,9 +286,6 @@ namespace projetodepizzaria
 
                 //Para Inserção, Atualização e exclusão
                 cmd.ExecuteNonQuery();
-
-
-
 
             } catch (MySqlException ex)
             {
@@ -288,8 +317,6 @@ namespace projetodepizzaria
                 cmd.Parameters.AddWithValue("cli_cod", clienteCodigo);
 
                 cmd.ExecuteNonQuery();
-
-
 
             }
             catch (MySqlException ex)

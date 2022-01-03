@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace projetodepizzaria
+namespace DesktopApp
 {
     public partial class TelaCadastroCliente : Form
     {

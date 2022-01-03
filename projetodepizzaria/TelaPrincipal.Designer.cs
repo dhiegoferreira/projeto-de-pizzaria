@@ -1,6 +1,6 @@
 ﻿
-namespace projetodepizzaria
-{
+namespace DesktopApp
+{ 
     partial class TelaPrincipal
     {
         /// <summary>
@@ -51,6 +51,7 @@ namespace projetodepizzaria
             this.menuCaixaPed = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMonitor = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMonitorPed = new System.Windows.Forms.ToolStripMenuItem();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -193,7 +194,8 @@ namespace projetodepizzaria
             this.menuCadCli,
             this.menuCadFunc,
             this.menuCadEnt,
-            this.menuCadProd});
+            this.menuCadProd,
+            this.clienteToolStripMenuItem});
             this.menuCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuCad.Image = ((System.Drawing.Image)(resources.GetObject("menuCad.Image")));
             this.menuCad.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -275,6 +277,12 @@ namespace projetodepizzaria
             this.menuMonitorPed.Size = new System.Drawing.Size(268, 36);
             this.menuMonitorPed.Text = "Historico de Pedidos";
             // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(185, 28);
+            this.clienteToolStripMenuItem.Text = "Cliente";
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -322,5 +330,6 @@ namespace projetodepizzaria
         public Label txtUsuarioNome;
         public Label txtDataPrincipal;
         private Panel desktopPanel;
+        private ToolStripMenuItem clienteToolStripMenuItem;
     }
 }

@@ -1,5 +1,5 @@
 ﻿
-namespace projetodepizzaria
+namespace DesktopApp
 {
     partial class TelaCadastroFuncionario
     {
@@ -50,13 +50,13 @@ namespace projetodepizzaria
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tblFuncionario = new System.Windows.Forms.DataGridView();
+            this.tblFuncionarios = new System.Windows.Forms.DataGridView();
             this.txtfunPesquisar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblFuncionario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblFuncionarios)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,7 +81,7 @@ namespace projetodepizzaria
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.tblFuncionario);
+            this.panel1.Controls.Add(this.tblFuncionarios);
             this.panel1.Controls.Add(this.txtfunPesquisar);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -148,7 +148,7 @@ namespace projetodepizzaria
             this.btnDeletar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDeletar.Enabled = false;
             this.btnDeletar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletar.Image")));
-            this.btnDeletar.Location = new System.Drawing.Point(485, 358);
+            this.btnDeletar.Location = new System.Drawing.Point(484, 394);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(80, 71);
             this.btnDeletar.TabIndex = 20;
@@ -158,7 +158,7 @@ namespace projetodepizzaria
             // 
             this.btnAlterar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAlterar.Image = ((System.Drawing.Image)(resources.GetObject("btnAlterar.Image")));
-            this.btnAlterar.Location = new System.Drawing.Point(360, 358);
+            this.btnAlterar.Location = new System.Drawing.Point(355, 394);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(80, 71);
             this.btnAlterar.TabIndex = 19;
@@ -169,7 +169,7 @@ namespace projetodepizzaria
             // 
             this.btnAdicionar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAdicionar.Image = ((System.Drawing.Image)(resources.GetObject("btnAdicionar.Image")));
-            this.btnAdicionar.Location = new System.Drawing.Point(234, 358);
+            this.btnAdicionar.Location = new System.Drawing.Point(234, 394);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(80, 71);
             this.btnAdicionar.TabIndex = 18;
@@ -181,7 +181,7 @@ namespace projetodepizzaria
             this.rbFeminino.AutoSize = true;
             this.rbFeminino.BackColor = System.Drawing.Color.Transparent;
             this.rbFeminino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbFeminino.Location = new System.Drawing.Point(110, 332);
+            this.rbFeminino.Location = new System.Drawing.Point(110, 334);
             this.rbFeminino.Name = "rbFeminino";
             this.rbFeminino.Size = new System.Drawing.Size(92, 24);
             this.rbFeminino.TabIndex = 17;
@@ -194,7 +194,7 @@ namespace projetodepizzaria
             this.rbMasculino.AutoSize = true;
             this.rbMasculino.BackColor = System.Drawing.Color.Transparent;
             this.rbMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbMasculino.Location = new System.Drawing.Point(110, 348);
+            this.rbMasculino.Location = new System.Drawing.Point(110, 364);
             this.rbMasculino.Name = "rbMasculino";
             this.rbMasculino.Size = new System.Drawing.Size(98, 24);
             this.rbMasculino.TabIndex = 16;
@@ -283,15 +283,16 @@ namespace projetodepizzaria
             this.label2.TabIndex = 3;
             this.label2.Text = "* Nome:";
             // 
-            // tblFuncionario
+            // tblFuncionarios
             // 
-            this.tblFuncionario.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.tblFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblFuncionario.Location = new System.Drawing.Point(38, 50);
-            this.tblFuncionario.Name = "tblFuncionario";
-            this.tblFuncionario.RowTemplate.Height = 25;
-            this.tblFuncionario.Size = new System.Drawing.Size(731, 114);
-            this.tblFuncionario.TabIndex = 2;
+            this.tblFuncionarios.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.tblFuncionarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tblFuncionarios.Location = new System.Drawing.Point(38, 50);
+            this.tblFuncionarios.Name = "tblFuncionarios";
+            this.tblFuncionarios.RowTemplate.Height = 25;
+            this.tblFuncionarios.Size = new System.Drawing.Size(731, 114);
+            this.tblFuncionarios.TabIndex = 2;
+            this.tblFuncionarios.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tblFuncionarios_MouseClick);
             // 
             // txtfunPesquisar
             // 
@@ -323,7 +324,7 @@ namespace projetodepizzaria
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblFuncionario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblFuncionarios)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,7 +351,7 @@ namespace projetodepizzaria
         public TextBox txtfunNome;
         private ComboBox cboCargo;
         private ComboBox cboPerfil;
-        public DataGridView tblFuncionario;
+        public DataGridView tblFuncionarios;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
     }

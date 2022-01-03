@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace projetodepizzaria
+namespace DesktopApp
 {
     public partial class TelaPrincipal : Form
     {
@@ -56,7 +56,7 @@ namespace projetodepizzaria
 
         private void entregadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Tela_CadastroEntregador telacadent = new Tela_CadastroEntregador();
+            TelaCadastroEntregador telacadent = new TelaCadastroEntregador();
             telacadent.TopLevel = false;
             desktopPanel.Controls.Add(telacadent);
             telacadent.Show();

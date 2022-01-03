@@ -1,7 +1,7 @@
 ﻿
-namespace projetodepizzaria
+namespace DesktopApp
 {
-    partial class Tela_CadastroEntregador
+    partial class TelaCadastroEntregador
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace projetodepizzaria
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_CadastroEntregador));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastroEntregador));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -78,7 +78,7 @@ namespace projetodepizzaria
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(501, 202);
+            this.pictureBox1.Location = new System.Drawing.Point(414, 207);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(35, 34);
             this.pictureBox1.TabIndex = 31;
@@ -115,6 +115,7 @@ namespace projetodepizzaria
             this.btnAlterar.Size = new System.Drawing.Size(80, 71);
             this.btnAlterar.TabIndex = 10;
             this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnAdicionar
             // 
@@ -125,19 +126,27 @@ namespace projetodepizzaria
             this.btnAdicionar.Size = new System.Drawing.Size(80, 71);
             this.btnAdicionar.TabIndex = 9;
             this.btnAdicionar.UseVisualStyleBackColor = false;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // tblEntregador
             // 
-            this.tblEntregador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tblEntregador.Location = new System.Drawing.Point(126, 251);
+            this.tblEntregador.AllowUserToAddRows = false;
+            this.tblEntregador.AllowUserToDeleteRows = false;
+            this.tblEntregador.AllowUserToResizeColumns = false;
+            this.tblEntregador.AllowUserToResizeRows = false;
+            this.tblEntregador.Location = new System.Drawing.Point(43, 242);
+            this.tblEntregador.MultiSelect = false;
             this.tblEntregador.Name = "tblEntregador";
+            this.tblEntregador.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.tblEntregador.RowTemplate.Height = 25;
-            this.tblEntregador.Size = new System.Drawing.Size(633, 137);
+            this.tblEntregador.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.tblEntregador.Size = new System.Drawing.Size(700, 137);
             this.tblEntregador.TabIndex = 8;
+            this.tblEntregador.MouseClick += new System.Windows.Forms.MouseEventHandler(this.tblEntregador_MouseClick);
             // 
             // txtEntNome
             // 
-            this.txtEntNome.Location = new System.Drawing.Point(126, 34);
+            this.txtEntNome.Location = new System.Drawing.Point(126, 48);
             this.txtEntNome.Name = "txtEntNome";
             this.txtEntNome.Size = new System.Drawing.Size(365, 29);
             this.txtEntNome.TabIndex = 7;
@@ -151,17 +160,18 @@ namespace projetodepizzaria
             // 
             // txtEntStatus
             // 
-            this.txtEntStatus.Location = new System.Drawing.Point(126, 85);
+            this.txtEntStatus.Location = new System.Drawing.Point(126, 94);
             this.txtEntStatus.Name = "txtEntStatus";
             this.txtEntStatus.Size = new System.Drawing.Size(365, 29);
             this.txtEntStatus.TabIndex = 5;
             // 
             // txtEntPesquisar
             // 
-            this.txtEntPesquisar.Location = new System.Drawing.Point(126, 202);
+            this.txtEntPesquisar.Location = new System.Drawing.Point(43, 207);
             this.txtEntPesquisar.Name = "txtEntPesquisar";
             this.txtEntPesquisar.Size = new System.Drawing.Size(365, 29);
             this.txtEntPesquisar.TabIndex = 4;
+            this.txtEntPesquisar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEntPesquisar_KeyPress);
             // 
             // label4
             // 
@@ -185,7 +195,7 @@ namespace projetodepizzaria
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(43, 85);
+            this.label2.Location = new System.Drawing.Point(43, 97);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 24);
             this.label2.TabIndex = 1;
@@ -195,7 +205,7 @@ namespace projetodepizzaria
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(41, 34);
+            this.label1.Location = new System.Drawing.Point(41, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(79, 24);
             this.label1.TabIndex = 0;
@@ -211,7 +221,7 @@ namespace projetodepizzaria
             this.label14.TabIndex = 28;
             this.label14.Text = "*";
             // 
-            // Tela_CadastroEntregador
+            // TelaCadastroEntregador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,9 +231,10 @@ namespace projetodepizzaria
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Tela_CadastroEntregador";
+            this.Name = "TelaCadastroEntregador";
             this.ShowIcon = false;
             this.Text = "Tela Cadastro Entregador";
+            this.Load += new System.EventHandler(this.Tela_CadastroEntregador_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace projetodepizzaria
+namespace DesktopApp
 {
     public partial class TelaCadastroProduto : Form
     {
@@ -24,9 +24,9 @@ namespace projetodepizzaria
 
         }
 
-   
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
 
-       
+        }
     }
 }

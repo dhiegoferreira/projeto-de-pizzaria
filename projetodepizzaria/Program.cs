@@ -1,8 +1,8 @@
 
 
 
-namespace projetodepizzaria
-{
+namespace DesktopApp
+{ 
     internal static class Program
     {
         /// <summary>
