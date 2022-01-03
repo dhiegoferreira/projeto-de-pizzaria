@@ -42,11 +42,12 @@ namespace DesktopApp
             if (dataGrid_Clientes.CurrentRow.Cells["Sexo"].Value.ToString().Equals("Feminino"))
             {
                 rbFeminino.Select();
-
+                pbSexoImagem.Image = Image.FromFile(@"C:../../Image/Icone-mulher.png");
             }
             else
             {
                 rbMasculino.Select();
+                pbSexoImagem.Image = Image.FromFile(@"C:../../Image/Icone-homem.png");
 
             }
 
@@ -66,6 +67,7 @@ namespace DesktopApp
         private void dataGrid_Clientes_MouseClick(object sender, MouseEventArgs e)
         {
             SetarCampos();
+            
         }
 
 

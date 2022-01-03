@@ -102,6 +102,8 @@ namespace DesktopApp
             txtfunUsuario.Text = tblFuncionarios.CurrentRow.Cells["Usuário"].Value.ToString();
             txtfunSenha.Text = tblFuncionarios.CurrentRow.Cells["Senha"].Value.ToString();
             cboPerfil.SelectedItem = tblFuncionarios.CurrentRow.Cells["Perfil"].Value.ToString();
+
+
             if (tblFuncionarios.CurrentRow.Cells["Sexo"].Value.ToString().Equals("Feminino"))
             {
                 rbFeminino.Select();
