@@ -117,6 +117,7 @@
             // 
             // button3
             // 
+            this.button3.Enabled = false;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.Location = new System.Drawing.Point(489, 408);
             this.button3.Name = "button3";

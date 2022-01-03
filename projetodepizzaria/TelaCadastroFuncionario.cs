@@ -11,10 +11,10 @@ using MySql.Data.MySqlClient;
 
 namespace projetodepizzaria
 {
-    public partial class Tela_CadastroFuncionario : Form
+    public partial class TelaCadastroFuncionario : Form
     {
         
-        public Tela_CadastroFuncionario()
+        public TelaCadastroFuncionario()
         {
             InitializeComponent();
 

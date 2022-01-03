@@ -45,7 +45,7 @@ namespace projetodepizzaria
 
         private void funcionárioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Tela_CadastroFuncionario telacadfunc= new Tela_CadastroFuncionario();
+            TelaCadastroFuncionario telacadfunc= new TelaCadastroFuncionario();
             telacadfunc.TopLevel = false;
             desktopPanel.Controls.Add(telacadfunc);
             telacadfunc.Show();

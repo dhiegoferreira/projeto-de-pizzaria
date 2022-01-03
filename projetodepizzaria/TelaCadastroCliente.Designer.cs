@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastroCliente));
+            this.maskTextCliTel = new System.Windows.Forms.MaskedTextBox();
             this.dataGrid_Clientes = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,20 +40,31 @@
             this.rbMasculino = new System.Windows.Forms.RadioButton();
             this.txtCliNome = new System.Windows.Forms.TextBox();
             this.txtCliBairro = new System.Windows.Forms.TextBox();
-            this.txtCliRua = new System.Windows.Forms.TextBox();
             this.txtCliNumero = new System.Windows.Forms.TextBox();
             this.btnAdicionar = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnDeletar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.maskTextCliTel = new System.Windows.Forms.MaskedTextBox();
             this.pbSexoImagem = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.txtCliRua = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid_Clientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSexoImagem)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // maskTextCliTel
+            // 
+            this.maskTextCliTel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.maskTextCliTel.Location = new System.Drawing.Point(496, 232);
+            this.maskTextCliTel.Margin = new System.Windows.Forms.Padding(4);
+            this.maskTextCliTel.Mask = "(00)00000-0000";
+            this.maskTextCliTel.Name = "maskTextCliTel";
+            this.maskTextCliTel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.maskTextCliTel.Size = new System.Drawing.Size(268, 26);
+            this.maskTextCliTel.TabIndex = 5;
+            this.maskTextCliTel.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCliTelefone_MaskInputRejected);
             // 
             // dataGrid_Clientes
             // 
@@ -78,55 +90,55 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(20, 216);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(4, 237);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 20);
+            this.label1.Size = new System.Drawing.Size(67, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nome:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(20, 260);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(7, 284);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 20);
+            this.label2.Size = new System.Drawing.Size(64, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "Bairro:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(32, 300);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(22, 330);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 20);
+            this.label3.Size = new System.Drawing.Size(49, 24);
             this.label3.TabIndex = 4;
             this.label3.Text = "Rua:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(406, 269);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(404, 281);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 20);
+            this.label4.Size = new System.Drawing.Size(84, 24);
             this.label4.TabIndex = 5;
             this.label4.Text = "Numero:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(400, 213);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(398, 232);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 20);
+            this.label5.Size = new System.Drawing.Size(90, 24);
             this.label5.TabIndex = 6;
             this.label5.Text = "Telefone:";
             // 
@@ -145,7 +157,7 @@
             // rbMasculino
             // 
             this.rbMasculino.AutoSize = true;
-            this.rbMasculino.Location = new System.Drawing.Point(9, 31);
+            this.rbMasculino.Location = new System.Drawing.Point(9, 32);
             this.rbMasculino.Margin = new System.Windows.Forms.Padding(4);
             this.rbMasculino.Name = "rbMasculino";
             this.rbMasculino.Size = new System.Drawing.Size(98, 24);
@@ -157,7 +169,7 @@
             // txtCliNome
             // 
             this.txtCliNome.AcceptsTab = true;
-            this.txtCliNome.Location = new System.Drawing.Point(79, 213);
+            this.txtCliNome.Location = new System.Drawing.Point(79, 235);
             this.txtCliNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtCliNome.Name = "txtCliNome";
             this.txtCliNome.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -167,24 +179,15 @@
             // txtCliBairro
             // 
             this.txtCliBairro.AcceptsTab = true;
-            this.txtCliBairro.Location = new System.Drawing.Point(79, 254);
+            this.txtCliBairro.Location = new System.Drawing.Point(79, 281);
             this.txtCliBairro.Margin = new System.Windows.Forms.Padding(4);
             this.txtCliBairro.Name = "txtCliBairro";
             this.txtCliBairro.Size = new System.Drawing.Size(268, 26);
             this.txtCliBairro.TabIndex = 2;
             // 
-            // txtCliRua
-            // 
-            this.txtCliRua.AcceptsTab = true;
-            this.txtCliRua.Location = new System.Drawing.Point(79, 294);
-            this.txtCliRua.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCliRua.Name = "txtCliRua";
-            this.txtCliRua.Size = new System.Drawing.Size(268, 26);
-            this.txtCliRua.TabIndex = 3;
-            // 
             // txtCliNumero
             // 
-            this.txtCliNumero.Location = new System.Drawing.Point(479, 266);
+            this.txtCliNumero.Location = new System.Drawing.Point(496, 281);
             this.txtCliNumero.Margin = new System.Windows.Forms.Padding(4);
             this.txtCliNumero.Name = "txtCliNumero";
             this.txtCliNumero.Size = new System.Drawing.Size(268, 26);
@@ -227,34 +230,17 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(426, 340);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(429, 330);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 20);
+            this.label6.Size = new System.Drawing.Size(59, 24);
             this.label6.TabIndex = 7;
             this.label6.Text = "Sexo:";
             // 
-            // maskTextCliTel
-            // 
-            this.maskTextCliTel.AllowPromptAsInput = false;
-            this.maskTextCliTel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.maskTextCliTel.HidePromptOnLeave = true;
-            this.maskTextCliTel.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
-            this.maskTextCliTel.Location = new System.Drawing.Point(479, 210);
-            this.maskTextCliTel.Margin = new System.Windows.Forms.Padding(4);
-            this.maskTextCliTel.Mask = "(##)#####-####";
-            this.maskTextCliTel.Name = "maskTextCliTel";
-            this.maskTextCliTel.ResetOnPrompt = false;
-            this.maskTextCliTel.ResetOnSpace = false;
-            this.maskTextCliTel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.maskTextCliTel.Size = new System.Drawing.Size(268, 26);
-            this.maskTextCliTel.TabIndex = 5;
-            this.maskTextCliTel.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtCliTelefone_MaskInputRejected);
-            // 
             // pbSexoImagem
             // 
-            this.pbSexoImagem.Location = new System.Drawing.Point(627, 299);
+            this.pbSexoImagem.Location = new System.Drawing.Point(654, 314);
             this.pbSexoImagem.Name = "pbSexoImagem";
             this.pbSexoImagem.Size = new System.Drawing.Size(110, 110);
             this.pbSexoImagem.TabIndex = 20;
@@ -264,20 +250,30 @@
             // 
             this.panel1.Controls.Add(this.rbFeminino);
             this.panel1.Controls.Add(this.rbMasculino);
-            this.panel1.Location = new System.Drawing.Point(479, 324);
+            this.panel1.Location = new System.Drawing.Point(496, 314);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(114, 60);
+            this.panel1.Size = new System.Drawing.Size(121, 64);
             this.panel1.TabIndex = 21;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(32, 350);
+            this.btnLimpar.Location = new System.Drawing.Point(615, 183);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(123, 29);
+            this.btnLimpar.Size = new System.Drawing.Size(149, 29);
             this.btnLimpar.TabIndex = 4;
-            this.btnLimpar.Text = "limpar campos";
+            this.btnLimpar.Text = "Limpar campos";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // txtCliRua
+            // 
+            this.txtCliRua.AcceptsTab = true;
+            this.txtCliRua.Location = new System.Drawing.Point(79, 330);
+            this.txtCliRua.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCliRua.Name = "txtCliRua";
+            this.txtCliRua.Size = new System.Drawing.Size(268, 26);
+            this.txtCliRua.TabIndex = 3;
             // 
             // TelaCadastroCliente
             // 
@@ -332,7 +328,6 @@
         private RadioButton rbMasculino;
         private TextBox txtCliNome;
         private TextBox txtCliBairro;
-        private TextBox txtCliRua;
         private TextBox txtCliNumero;
         private Button btnAdicionar;
         private Button btnAtualizar;
@@ -342,5 +337,6 @@
         private PictureBox pbSexoImagem;
         private Panel panel1;
         private Button btnLimpar;
+        private TextBox txtCliRua;
     }
 }

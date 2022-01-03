@@ -98,6 +98,7 @@ namespace projetodepizzaria
             // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.txtDataPrincipal);
             this.panel3.Controls.Add(this.txtUsuarioNome);
             this.panel3.Controls.Add(this.label5);

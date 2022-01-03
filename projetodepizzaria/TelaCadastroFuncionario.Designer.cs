@@ -1,7 +1,7 @@
 ﻿
 namespace projetodepizzaria
 {
-    partial class Tela_CadastroFuncionario
+    partial class TelaCadastroFuncionario
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace projetodepizzaria
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tela_CadastroFuncionario));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastroFuncionario));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -146,6 +146,7 @@ namespace projetodepizzaria
             // btnDeletar
             // 
             this.btnDeletar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnDeletar.Enabled = false;
             this.btnDeletar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeletar.Image")));
             this.btnDeletar.Location = new System.Drawing.Point(485, 406);
             this.btnDeletar.Name = "btnDeletar";
@@ -307,14 +308,14 @@ namespace projetodepizzaria
             this.label1.Size = new System.Drawing.Size(70, 52);
             this.label1.TabIndex = 0;
             // 
-            // Tela_CadastroFuncionario
+            // TelaCadastroFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(794, 501);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Tela_CadastroFuncionario";
+            this.Name = "TelaCadastroFuncionario";
             this.ShowIcon = false;
             this.Text = "Cadastro Funcionario";
             this.Load += new System.EventHandler(this.Tela_CadastroFuncionario_Load);
