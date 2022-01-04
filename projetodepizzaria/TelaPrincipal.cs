@@ -16,6 +16,7 @@ namespace DesktopApp
         {
             InitializeComponent();
             CenterToScreen();
+            
         }
 
 

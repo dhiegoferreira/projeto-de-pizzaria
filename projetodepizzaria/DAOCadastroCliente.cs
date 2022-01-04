@@ -181,9 +181,12 @@ namespace DesktopApp
 
 
         //MÉTODO QUE VAI INSERIR O NOME,  NO BANCO DE DADOS.
-        public static void CadastrarCliente(String nome, String telefone, string sexo, string sql) 
+        public static void CadastrarCliente(String nome, String telefone, string sexo) 
         {
+
+            string sql = "INSERT INTO clientes(cli_nome, cli_telefone, cli_sexo, cli_end_fk) VALUES(@clinome, @cli_telefone, @cli_sexo, @cli_end_fk)";
             MySqlConnection conn = new MySqlConnection(StringDeConexao);
+
 
             try
             {

@@ -42,12 +42,12 @@ namespace DesktopApp
             if (dataGrid_Clientes.CurrentRow.Cells["Sexo"].Value.ToString().Equals("Feminino"))
             {
                 rbFeminino.Select();
-                pbSexoImagem.Image = Image.FromFile(@"C:../../Image/Icone-mulher.png");
+                pbSexoImagem.Image = Image.FromFile(@"C:../../Debug/Icone-mulher.png");
             }
             else
             {
                 rbMasculino.Select();
-                pbSexoImagem.Image = Image.FromFile(@"C:../../Image/Icone-homem.png");
+                pbSexoImagem.Image = Image.FromFile(@"C:../../Debug/Icone-homem.png");
 
             }
 
@@ -71,7 +71,42 @@ namespace DesktopApp
         }
 
 
-        //Evento do botão adicionar - chamar a controller
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+        }
+
+       
+
+     
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            this.Dispose();
+            
+        }
+
+
+       
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+           
+
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnAdicionar_Click(object sender, EventArgs e)
         {
             //Fazendo a verificação dos campos 
@@ -90,7 +125,7 @@ namespace DesktopApp
                 //Condicional para passar o conteúdo do radiobutton selecionado
                 if (rbFeminino.Checked.Equals(true))
                 {
-                    DAOCadastroCliente.CadastrarCliente(txtCliNome.Text, maskTextCliTel.Text, rbFeminino.Text, "INSERT INTO clientes(cli_nome, cli_telefone, cli_sexo, cli_end_fk) VALUES(@clinome, @cli_telefone, @cli_sexo, @cli_end_fk)");
+                    DAOCadastroCliente.CadastrarCliente(txtCliNome.Text, maskTextCliTel.Text, rbFeminino.Text);
                     //Passar a string sql como parÂmetro
                     // DAOCadastroCliente.ObterDados
                     DAOCadastroCliente.ObterDados(dataGrid_Clientes);
@@ -100,7 +135,7 @@ namespace DesktopApp
                 }
                 else
                 {
-                    DAOCadastroCliente.CadastrarCliente(txtCliNome.Text, maskTextCliTel.Text, rbMasculino.Text, "INSERT INTO clientes(cli_nome, cli_telefone, cli_sexo, cli_end_fk) VALUES(@clinome, @cli_telefone, @cli_sexo, @cli_end_fk)");
+                    DAOCadastroCliente.CadastrarCliente(txtCliNome.Text, maskTextCliTel.Text, rbMasculino.Text);
                     //Passar a string sql como parÂmetro
                     // DAOCadastroCliente.ObterDados
                     DAOCadastroCliente.ObterDados(dataGrid_Clientes);
@@ -108,12 +143,6 @@ namespace DesktopApp
 
             }
 
-
-        }
-
-        private void btnLimpar_Click(object sender, EventArgs e)
-        {
-            LimparCampos();
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)
@@ -154,31 +183,10 @@ namespace DesktopApp
                 }
 
 
-               
 
             }
 
 
-
-        }
-
-       
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-            this.Dispose();
-            
-        }
-
-        private void TelaCadastroCliente_Activated(object sender, EventArgs e)
-        {
-           
         }
     }
 

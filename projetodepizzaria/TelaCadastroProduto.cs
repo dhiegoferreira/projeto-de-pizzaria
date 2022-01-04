@@ -28,5 +28,10 @@ namespace DesktopApp
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

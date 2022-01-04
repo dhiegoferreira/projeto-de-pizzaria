@@ -38,7 +38,6 @@ namespace DesktopApp
             this.txtUsuarioNome = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.desktopPanel = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -51,7 +50,6 @@ namespace DesktopApp
             this.menuCaixaPed = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMonitor = new System.Windows.Forms.ToolStripMenuItem();
             this.menuMonitorPed = new System.Windows.Forms.ToolStripMenuItem();
-            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -60,23 +58,23 @@ namespace DesktopApp
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Control;
+            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnSairPrincipal);
             this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.desktopPanel);
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Location = new System.Drawing.Point(0, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1062, 578);
+            this.panel1.Size = new System.Drawing.Size(1069, 645);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(853, 83);
+            this.pictureBox1.Location = new System.Drawing.Point(864, 117);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -85,98 +83,94 @@ namespace DesktopApp
             // 
             // btnSairPrincipal
             // 
-            this.btnSairPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSairPrincipal.BackColor = System.Drawing.Color.Firebrick;
+            this.btnSairPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSairPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSairPrincipal.ForeColor = System.Drawing.SystemColors.Window;
             this.btnSairPrincipal.Image = ((System.Drawing.Image)(resources.GetObject("btnSairPrincipal.Image")));
             this.btnSairPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSairPrincipal.Location = new System.Drawing.Point(961, 529);
+            this.btnSairPrincipal.Location = new System.Drawing.Point(960, 585);
             this.btnSairPrincipal.Name = "btnSairPrincipal";
-            this.btnSairPrincipal.Size = new System.Drawing.Size(91, 38);
+            this.btnSairPrincipal.Size = new System.Drawing.Size(92, 46);
             this.btnSairPrincipal.TabIndex = 6;
             this.btnSairPrincipal.Text = "SAIR";
             this.btnSairPrincipal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSairPrincipal.UseVisualStyleBackColor = true;
+            this.btnSairPrincipal.UseVisualStyleBackColor = false;
             this.btnSairPrincipal.Click += new System.EventHandler(this.btnSairPrincipal_Click);
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.SystemColors.Window;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.txtDataPrincipal);
             this.panel3.Controls.Add(this.txtUsuarioNome);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(819, 260);
+            this.panel3.Location = new System.Drawing.Point(819, 243);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(231, 100);
+            this.panel3.Size = new System.Drawing.Size(231, 113);
             this.panel3.TabIndex = 5;
             // 
             // txtDataPrincipal
             // 
             this.txtDataPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDataPrincipal.Location = new System.Drawing.Point(63, 65);
+            this.txtDataPrincipal.Location = new System.Drawing.Point(68, 74);
             this.txtDataPrincipal.Name = "txtDataPrincipal";
-            this.txtDataPrincipal.Size = new System.Drawing.Size(163, 29);
+            this.txtDataPrincipal.Size = new System.Drawing.Size(163, 33);
             this.txtDataPrincipal.TabIndex = 5;
             // 
             // txtUsuarioNome
             // 
             this.txtUsuarioNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtUsuarioNome.Location = new System.Drawing.Point(63, 28);
+            this.txtUsuarioNome.Location = new System.Drawing.Point(66, 23);
             this.txtUsuarioNome.Name = "txtUsuarioNome";
-            this.txtUsuarioNome.Size = new System.Drawing.Size(163, 22);
+            this.txtUsuarioNome.Size = new System.Drawing.Size(163, 33);
             this.txtUsuarioNome.TabIndex = 4;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(3, 65);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(3, 74);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 24);
+            this.label5.Size = new System.Drawing.Size(71, 24);
             this.label5.TabIndex = 1;
             this.label5.Text = "DATA:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(3, 28);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(3, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 24);
+            this.label4.Size = new System.Drawing.Size(71, 24);
             this.label4.TabIndex = 0;
             this.label4.Text = "USER:";
             // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(863, 222);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 23);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Bem Vindo!";
-            // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(853, 10);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(853, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 61);
+            this.label1.Size = new System.Drawing.Size(180, 69);
             this.label1.TabIndex = 2;
             this.label1.Text = "SGP";
             // 
             // desktopPanel
             // 
-            this.desktopPanel.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.desktopPanel.Location = new System.Drawing.Point(3, 36);
+            this.desktopPanel.BackColor = System.Drawing.SystemColors.Window;
+            this.desktopPanel.Location = new System.Drawing.Point(0, 41);
             this.desktopPanel.Name = "desktopPanel";
-            this.desktopPanel.Size = new System.Drawing.Size(810, 540);
+            this.desktopPanel.Size = new System.Drawing.Size(813, 611);
             this.desktopPanel.TabIndex = 1;
             this.desktopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // menuStrip1
             // 
             this.menuStrip1.AutoSize = false;
+            this.menuStrip1.BackColor = System.Drawing.Color.DarkCyan;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuCad,
@@ -184,7 +178,7 @@ namespace DesktopApp
             this.menuMonitor});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(813, 41);
+            this.menuStrip1.Size = new System.Drawing.Size(813, 46);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -194,13 +188,13 @@ namespace DesktopApp
             this.menuCadCli,
             this.menuCadFunc,
             this.menuCadEnt,
-            this.menuCadProd,
-            this.clienteToolStripMenuItem});
+            this.menuCadProd});
             this.menuCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.menuCad.ForeColor = System.Drawing.SystemColors.Window;
             this.menuCad.Image = ((System.Drawing.Image)(resources.GetObject("menuCad.Image")));
             this.menuCad.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuCad.Name = "menuCad";
-            this.menuCad.Size = new System.Drawing.Size(126, 37);
+            this.menuCad.Size = new System.Drawing.Size(126, 42);
             this.menuCad.Text = "Cadastro";
             // 
             // menuCadCli
@@ -208,6 +202,7 @@ namespace DesktopApp
             this.menuCadCli.Image = ((System.Drawing.Image)(resources.GetObject("menuCadCli.Image")));
             this.menuCadCli.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuCadCli.Name = "menuCadCli";
+            this.menuCadCli.ShowShortcutKeys = false;
             this.menuCadCli.Size = new System.Drawing.Size(185, 28);
             this.menuCadCli.Text = "Cliente";
             this.menuCadCli.Click += new System.EventHandler(this.clienteToolStripMenuItem_Click);
@@ -244,10 +239,11 @@ namespace DesktopApp
             this.menuCaixa.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuCaixaPed});
             this.menuCaixa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.menuCaixa.ForeColor = System.Drawing.SystemColors.Window;
             this.menuCaixa.Image = ((System.Drawing.Image)(resources.GetObject("menuCaixa.Image")));
             this.menuCaixa.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuCaixa.Name = "menuCaixa";
-            this.menuCaixa.Size = new System.Drawing.Size(101, 37);
+            this.menuCaixa.Size = new System.Drawing.Size(101, 42);
             this.menuCaixa.Text = "Caixa";
             // 
             // menuCaixaPed
@@ -263,10 +259,11 @@ namespace DesktopApp
             this.menuMonitor.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuMonitorPed});
             this.menuMonitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.menuMonitor.ForeColor = System.Drawing.SystemColors.Window;
             this.menuMonitor.Image = ((System.Drawing.Image)(resources.GetObject("menuMonitor.Image")));
             this.menuMonitor.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.menuMonitor.Name = "menuMonitor";
-            this.menuMonitor.Size = new System.Drawing.Size(216, 37);
+            this.menuMonitor.Size = new System.Drawing.Size(216, 42);
             this.menuMonitor.Text = "Monitor de Pedidos";
             // 
             // menuMonitorPed
@@ -277,23 +274,19 @@ namespace DesktopApp
             this.menuMonitorPed.Size = new System.Drawing.Size(268, 36);
             this.menuMonitorPed.Text = "Historico de Pedidos";
             // 
-            // clienteToolStripMenuItem
-            // 
-            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
-            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(185, 28);
-            this.clienteToolStripMenuItem.Text = "Cliente";
-            // 
             // TelaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 577);
+            this.ClientSize = new System.Drawing.Size(1064, 641);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
             this.Name = "TelaPrincipal";
+            this.ShowInTaskbar = false;
             this.Text = "Tela Principal";
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.panel1.ResumeLayout(false);
@@ -310,7 +303,6 @@ namespace DesktopApp
         #endregion
 
         private Panel panel1;
-        private Label label3;
         private Label label1;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem menuCad;
@@ -330,6 +322,5 @@ namespace DesktopApp
         public Label txtUsuarioNome;
         public Label txtDataPrincipal;
         private Panel desktopPanel;
-        private ToolStripMenuItem clienteToolStripMenuItem;
     }
 }

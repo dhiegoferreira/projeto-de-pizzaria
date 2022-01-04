@@ -69,5 +69,10 @@ namespace DesktopApp
         {
 
         }
+
+        private void lblNomeSistema_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
