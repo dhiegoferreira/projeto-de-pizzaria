@@ -161,9 +161,10 @@ namespace DesktopApp
             // desktopPanel
             // 
             this.desktopPanel.BackColor = System.Drawing.SystemColors.Window;
+            this.desktopPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("desktopPanel.BackgroundImage")));
             this.desktopPanel.Location = new System.Drawing.Point(0, 41);
             this.desktopPanel.Name = "desktopPanel";
-            this.desktopPanel.Size = new System.Drawing.Size(813, 611);
+            this.desktopPanel.Size = new System.Drawing.Size(813, 604);
             this.desktopPanel.TabIndex = 1;
             this.desktopPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
