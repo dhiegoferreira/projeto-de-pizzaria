@@ -32,8 +32,8 @@
 
 
 ### - **Modelo Lógico**
+![logical](https://user-images.githubusercontent.com/53379935/148718701-3243471c-f479-487c-9450-ef394ec79533.png)
 
-![logico](https://user-images.githubusercontent.com/53379935/148718366-ba839e48-54f2-4397-b180-0026cb0a68a7.png)
 
 ### - **Modelo Físico**
 
