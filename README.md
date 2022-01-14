@@ -28,25 +28,33 @@
 
 
 ### - **Modelo Conceitual**
-![Untitled](https://user-images.githubusercontent.com/53379935/148718341-01456964-5d20-4e0a-8d2c-89276ba45b37.png)
+![modelo conceitual](https://user-images.githubusercontent.com/53379935/149530977-7a5cc870-1212-43c5-91d5-ef37d0873da0.png)
+
 
 
 ### - **Modelo Lógico**
-![logical](https://user-images.githubusercontent.com/53379935/148718701-3243471c-f479-487c-9450-ef394ec79533.png)
+![modeloLogico](https://user-images.githubusercontent.com/53379935/149531002-b7dab14c-b0a9-4db8-8849-3949567cf5c6.png)
 
-
-### - **Modelo Físico**
 
 
 
 ### - **Imagens**
 
+#### - Form Login
+![Login](https://user-images.githubusercontent.com/53379935/149531561-30f87c86-ebcd-424c-b0bf-962fca07066f.png)
+
+#### - Form TelaMenu
+![TelaMENU](https://user-images.githubusercontent.com/53379935/149531686-ebe35748-0bdc-4546-9f4f-5e4214540bd6.png)
+
+#### - Form Gerar Pedido
+![FormGerarPedidos](https://user-images.githubusercontent.com/53379935/149532205-bed261b9-4e8d-476f-be7f-4ffc69fd68a8.png)
 
 
 
 ### - **Referências**
 - https://dev.mysql.com/doc/connector-net/en/connector-net-installation-windows.html
 - https://docs.microsoft.com/pt-br/dotnet/desktop/winforms/?view=netdesktop-6.0
+- http://www.theclub.com.br/restrito/revistas/201310/prog1310.aspx
 
 
 
