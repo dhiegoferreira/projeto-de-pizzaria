@@ -33,8 +33,7 @@
 
 
 ### - **Modelo Lógico**
-![modeloLogico](https://user-images.githubusercontent.com/53379935/149531002-b7dab14c-b0a9-4db8-8849-3949567cf5c6.png)
-
+![modelagemlogica](https://user-images.githubusercontent.com/53379935/149557134-db4359f5-40a1-4283-b83b-b888db27edc5.png)
 
 
 
