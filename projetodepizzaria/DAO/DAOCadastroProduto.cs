@@ -18,12 +18,10 @@ namespace DesktopApp
             string unidademedida)
         {
           
-
             try
             {
                 //Abrindo conexão com o BD
                 conn.Open();
-
 
                 string sql = "INSERT INTO produtos(prod_nome, prod_categoria, prod_valor_unitario, prod_descricao, " +
                     "prod_unidademedida) VALUES(@prod_nome, @prod_categoria, @prod_valor_unitario, @prod_descricao, " +
@@ -67,8 +65,6 @@ namespace DesktopApp
 
             String sql = "UPDATE produtos SET prod_nome=@prod_nome, prod_categoria=@prod_categoria, prod_valor_unitario=@prod_valor_unitario, prod_descricao=@prod_descricao, prod_unidademedida=@prod_unidademedida WHERE prod_cod=@prod_cod";
 
-          
-
             try
             {
                 conn.Open();
@@ -101,8 +97,7 @@ namespace DesktopApp
 
         }
         
-        
-        
+
         public static void ObterDados(DataGridView tblProduto)
         {
             string sql = "SELECT prod_cod AS Código, prod_nome as Nome, prod_categoria AS Categoria, prod_valor_unitario AS Valor, prod_descricao AS Descrição, prod_unidademedida AS Medida FROM produtos";
@@ -163,10 +158,7 @@ namespace DesktopApp
                 conn.Close();
             }
 
-
-
         }
-
 
     }
 }
