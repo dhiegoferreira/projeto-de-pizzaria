@@ -25,11 +25,8 @@ namespace DesktopApp
 
         public static void InserirFuncionario(string nome, string cargo, string usuario, string senha, string perfil, string sexo)
         {
-
-
+            
             string sql = "INSERT INTO FUNCIONARIOS(fun_nome, fun_cargo, fun_usuario, fun_senha, fun_perfil, fun_sexo) VALUES(@fun_nome,@fun_cargo, @fun_usuario, @fun_senha, @fun_perfil, @fun_sexo)";
-
-
 
             try
             {
@@ -73,13 +70,9 @@ namespace DesktopApp
         public static void AlterarFuncionario(string nome, string cargo, string usuario, string senha, string perfil, string sexo, String codigoFuncionario)
         {
 
-
-
             string sql = "UPDATE FUNCIONARIOS SET fun_nome = @fun_nome, fun_cargo = @fun_cargo, " +
                 "fun_usuario=@fun_usuario, fun_senha=@fun_senha, fun_perfil=@fun_perfil, fun_sexo=@fun_sexo WHERE fun_cod=@fun_cod ";
-
-           
-
+     
             try
             {
                 conn.Open();
@@ -116,10 +109,7 @@ namespace DesktopApp
         public static void ObterDados(DataGridView tblFuncionario)
         {
 
-
-            string sql = "SELECT fun_cod AS Código, fun_nome as Nome, fun_cargo AS Cargo, fun_usuario AS Usuário, fun_senha AS Senha, fun_perfil AS Perfil, fun_sexo AS Sexo FROM funcionarios";
-
-          
+            string sql = "SELECT fun_cod AS Código, fun_nome as Nome, fun_cargo AS Cargo, fun_usuario AS Usuário, fun_senha AS Senha, fun_perfil AS Perfil, fun_sexo AS Sexo FROM funcionarios";       
 
             try
             {
@@ -145,6 +135,7 @@ namespace DesktopApp
             }
         }
 
+        
         public static void PesquisarFuncNome(DataGridView tblFuncionarios, string nomeFuncionario)
         {
             
@@ -180,21 +171,6 @@ namespace DesktopApp
 
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
 }
