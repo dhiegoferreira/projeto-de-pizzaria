@@ -8,16 +8,16 @@ namespace DesktopApp
 {
     class ModelPedidoProduto
     {
-        private static string prodQuantidade;
-        private static string pedido_cod_pedidos;
-        private static string pedido_cod_produtos;
+        private static string _prodQuantidade;
+        private static string _pedido_cod_pedidos;
+        private static string _pedido_cod_produtos;
 
 
 
         public static string ProdutoQtd
         {
-            get { return prodQuantidade; }
-            set { prodQuantidade = value; }
+            get { return _prodQuantidade; }
+            set { _prodQuantidade = value; }
         }
 
 
