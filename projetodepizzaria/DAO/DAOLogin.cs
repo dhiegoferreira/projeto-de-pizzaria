@@ -167,20 +167,7 @@ namespace DesktopApp
 
             }
 
-
-
-
-
         }
-
-
-       
-
-
-
-
-
-
 
     }
 }
