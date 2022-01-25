@@ -40,13 +40,13 @@
 
 ### - **Imagens**
 
-#### - Form Login
+#### - Form: Login
 ![Login](https://user-images.githubusercontent.com/53379935/149531561-30f87c86-ebcd-424c-b0bf-962fca07066f.png)
 
-#### - Form TelaMenu
+#### - Form: Menu
 ![TelaMENU](https://user-images.githubusercontent.com/53379935/149531686-ebe35748-0bdc-4546-9f4f-5e4214540bd6.png)
 
-#### - Form Gerar Pedido
+#### - Form: Gerar Pedido
 ![FormGerarPedidos](https://user-images.githubusercontent.com/53379935/149532205-bed261b9-4e8d-476f-be7f-4ffc69fd68a8.png)
 
 
