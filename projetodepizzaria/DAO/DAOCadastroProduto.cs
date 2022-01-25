@@ -17,7 +17,7 @@ namespace DesktopApp
         public static void CadastrarProduto(String nome, String categoria, string valor_unitario, string descricao,
             string unidademedida)
         {
-            MySqlConnection conn = new MySqlConnection(StringDeConexao);
+          
 
             try
             {
@@ -67,7 +67,7 @@ namespace DesktopApp
 
             String sql = "UPDATE produtos SET prod_nome=@prod_nome, prod_categoria=@prod_categoria, prod_valor_unitario=@prod_valor_unitario, prod_descricao=@prod_descricao, prod_unidademedida=@prod_unidademedida WHERE prod_cod=@prod_cod";
 
-            MySqlConnection conn = new MySqlConnection(StringDeConexao);
+          
 
             try
             {
