@@ -138,7 +138,7 @@ namespace DesktopApp
         public static void PesquisarPorNome(DataGridView tblEntregador, string  nomeEntregador)
         {
 
-            MySqlConnection conn = new MySqlConnection(StringDeConexao);
+            
             string sql = "SELECT ent_cod AS Código, ent_nome AS Nome, ent_status AS Status, ent_telefone AS Telefone FROM entregador WHERE ent_nome=@ent_nome";
 
             try
