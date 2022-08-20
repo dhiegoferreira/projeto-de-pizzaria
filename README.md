@@ -2,7 +2,7 @@
 
 # Projeto Sistema de Gerenciamento de Pizzaria para Desktop :computer: :pizza:
 
-#### STATUS: Organização do Código, Reformulação das classes e métodos. 
+
 #### O Sistema de Gerenciamento de Pizzaria (SGP) é um sistema simples desktop com integração ao Banco de Dados Mysql. ...
 #### Este projeto está sendo desenvolvido utilizando a linguagem C# com componentes visuais do Windows Form .NET Framework
 
